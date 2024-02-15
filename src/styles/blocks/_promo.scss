@@ -1,0 +1,70 @@
+.promo {
+  padding: 100px 0;
+  // height: 100vh;
+}
+
+.promo-container {
+  @include container();
+  // border: 1px solid aqua;
+}
+
+.promo-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-info {
+  flex-basis: 50%;
+}
+
+.promo-info-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  color: $color-light;
+}
+
+.promo-info-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-right: auto;
+  padding: 15px 35px;
+  background: $color-gradient;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    // opacity: .8;
+    transform: translate(0, -5px);
+    box-shadow: 0 0 15px rgba($color-accent, .5);
+  }
+}
+
+.promo-info-btn-play {
+  margin: 0 5px 0 -10px;
+  width: 25px;
+  height: 25px;
+
+}
+
+.promo-info-btn-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: $color-light;
+}
+
+.promo-cover {
+  flex-basis: 40%;
+
+}
+
+.promo-cover-img {
+  margin: 0 auto;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 15px 15px 0 rgba($color-accent, .5);
+  // box-shadow: 0 0 100px rgba($color-accent, .5);
+}
