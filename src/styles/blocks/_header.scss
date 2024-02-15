@@ -1,1 +1,28 @@
+.header {
+  padding: 30px 0;
+  border-bottom: 1px dashed orange;
 
+}
+
+.header-container {
+  @include container();
+  // border: 1px solid aqua;
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  @include text-gradient();
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .7;
+  }
+}
