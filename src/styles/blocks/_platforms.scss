@@ -2,10 +2,35 @@
 
 }
 
-.platform-items {
+.platforms-container {
+  @include container();
 
 }
 
-.platforms-link {
+.platforms-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+  background: $color-gradient;
+  border-radius: 20px;
+  list-style: none;
+}
 
+.platform-item {
+  margin: 0 15px 0 15px;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    transform: translate(0, -3px);
+  }
+}
+
+.platforms-link {
+  display: block;
+  width: 190px;
+  height: 80px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

@@ -1,5 +1,5 @@
 .promo {
-  padding: 100px 0;
+  padding: 150px 0;
   // height: 100vh;
 }
 
@@ -37,8 +37,8 @@
   transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
   &:hover {
-    // opacity: .8;
-    transform: translate(0, -5px);
+    // opacity: .9;
+    // transform: translate(0, -5px);
     box-shadow: 0 0 15px rgba($color-accent, .5);
   }
 }
