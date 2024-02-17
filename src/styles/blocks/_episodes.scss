@@ -27,8 +27,7 @@
 .episodes-desc {
   font-size: 16px;
   font-weight: 300;
-  color: $color-light;
-  opacity: .5;
+  color: $color-semilight;
 }
 
 .episodes-order {
@@ -41,7 +40,7 @@
 
 .episodes-item {
   margin-bottom: 20px;
-  background-color: #2D2D30;
+  background-color: $color-semidark;
   border-radius: 15px;
   transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
@@ -117,7 +116,7 @@
 
   img {
     margin-left: 15px;
-    height: 15px;
+    height: 12px;
     transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
   }
 
