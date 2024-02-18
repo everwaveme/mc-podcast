@@ -1,0 +1,40 @@
+.footer {
+  padding: 50px 0;
+  border: 1px dashed pink;
+}
+
+.footer-container {
+  @include container();
+  border: 1px solid purple;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright {
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-semilight;
+}
+
+.footer-author {
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-semilight;
+}
+
+.footer-author-link {
+  @include text-gradient();
+  display: inline-block;
+  text-decoration: none;
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+
