@@ -5,7 +5,6 @@
 
 .contacts-container {
   @include container();
-  border: 1px solid purple;
 }
 
 .contacts-wrap {
@@ -21,7 +20,7 @@
 .contacts-title {
   @include text-gradient();
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 38px;
   font-weight: 900;
 }
@@ -52,7 +51,7 @@
 .contacs-newsletter-title {
   @include text-gradient();
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 38px;
   font-weight: 900;
 }

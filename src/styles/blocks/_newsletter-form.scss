@@ -2,17 +2,18 @@
   position: relative;
   margin: 40px auto 0 auto;
   width: 80%;
+  border-radius: 100px;
 }
 
 .form-input {
-  padding: 13px 20px;
+  padding: 10px 20px;
   width: 100%;
   font-size: 16px;
   font-weight: 400;
   font-family: inherit;
   color: $color-light;
   background-color: $color-semidark;
-  border: 2px solid $color-accent;
+  border: 3px solid $color-accent;
   border-radius: 100px;
   transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
@@ -24,7 +25,6 @@
     outline: none;
     box-shadow: 0 0 15px rgba($color-accent, .5);
   }
-
 }
 
 .form-button {
@@ -32,5 +32,19 @@
   top: 0;
   right: 0;
   z-index: 3;
+  padding: 10px 20px;
   height: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: $color-light;
+  background: $color-gradient;
+  border: none;
+  border-radius: 100px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .9;
+  }
 }
