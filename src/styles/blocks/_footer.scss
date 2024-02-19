@@ -1,11 +1,9 @@
 .footer {
   padding: 50px 0;
-  border: 1px dashed pink;
 }
 
 .footer-container {
   @include container();
-  border: 1px solid purple;
 }
 
 .footer-wrap {

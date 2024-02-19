@@ -1,0 +1,64 @@
+.contacts {
+  padding: 130px 0;
+  background-color: $color-semidark;
+}
+
+.contacts-container {
+  @include container();
+  border: 1px solid purple;
+}
+
+.contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-info {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.contacts-title {
+  @include text-gradient();
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.contacts-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-light;
+}
+
+.contacts-link {
+  @include text-gradient();
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.contacs-newsletter {
+  flex-basis: 45%;
+  text-align: center;
+}
+
+.contacs-newsletter-title {
+  @include text-gradient();
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.contacs-newsletter-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-light;
+}
