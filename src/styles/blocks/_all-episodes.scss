@@ -4,7 +4,6 @@
 
 .all-episodes-container {
   @include container();
-  border: 1px solid aqua;
 }
 
 .all-episodes-wrap {
@@ -31,7 +30,6 @@
   flex-wrap: wrap;
   margin: -15px;
   list-style: none;
-  border: 1px dashed purple;
 }
 
 .all-episodes-item {
@@ -73,7 +71,6 @@
   font-size: 18px;
   font-weight: 700;
   color: $color-light;
-
 }
 
 .all-episodes-link-play {
