@@ -1,5 +1,13 @@
 .episodes {
   padding: 130px 0;
+
+  @media (max-width: $tablet-max) {
+
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
 
 .episodes-container {

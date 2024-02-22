@@ -1,5 +1,13 @@
 .platforms {
-margin-bottom: 100px;
+  margin-bottom: 100px;
+
+  @media (max-width: $tablet-max) {
+
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
 
 .platforms-container {
@@ -10,10 +18,21 @@ margin-bottom: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 50px;
+  padding: 50px;
   background: $color-gradient;
   border-radius: 20px;
   list-style: none;
+
+  @media (max-width: $tablet-max) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 35px;
+
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
 
 .platforms-item {
@@ -22,6 +41,15 @@ margin-bottom: 100px;
 
   &:hover {
     transform: translate(0, -3px);
+  }
+
+  @media (max-width: $tablet-max) {
+    margin: 15px;
+
+  }
+
+  @media (max-width: $mobile-max) {
+
   }
 }
 
@@ -32,4 +60,15 @@ margin-bottom: 100px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @media (max-width: $tablet-max) {
+    width: 200px;
+
+  }
+
+  @media (max-width: $mobile-max) {
+
+  }
 }
+
+
