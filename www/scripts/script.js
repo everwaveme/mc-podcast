@@ -1,4 +1,4 @@
 //AOS animation
 AOS.init({
-  once: true,
+  // once: true,
 });
