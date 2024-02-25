@@ -1,5 +1,10 @@
 .nav {
 
+  @media (max-width: $tablet-max) {
+    display: none;
+
+    //будет всплывать сверху вниз
+  }
 }
 
 .nav-menu {

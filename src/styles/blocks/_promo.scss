@@ -2,11 +2,11 @@
   padding: 125px 0 175px 0;
 
   @media (max-width: $tablet-max) {
-    // padding: 125px 0 125px 0;
+
   }
 
   @media (max-width: $mobile-max) {
-
+    padding: 100px 0 150px 0;
   }
 }
 
@@ -23,10 +23,6 @@
     flex-direction: column-reverse;
     justify-content: center;
   }
-
-  @media (max-width: $mobile-max) {
-
-  }
 }
 
 .promo-info {
@@ -35,10 +31,7 @@
   @media (max-width: $tablet-max) {
     display: flex;
     flex-direction: column;
-  }
-
-  @media (max-width: $mobile-max) {
-
+    align-items: center;
   }
 }
 
@@ -49,13 +42,15 @@
   color: $color-light;
 
   @media (max-width: $tablet-max) {
-    font-size: 32px;
     margin-top: 80px;
+    font-size: 32px;
+    width: 85%;
     text-align: center;
   }
 
   @media (max-width: $mobile-max) {
-
+    width: 100%;
+    font-size: 26px;
   }
 }
 
@@ -71,8 +66,6 @@
   transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 
   &:hover {
-    // opacity: .9;
-    // transform: translate(0, -5px);
     box-shadow: 0 0 15px rgba($color-accent, .5);
   }
 
@@ -94,24 +87,12 @@
     width: 23px;
     height: 23px;
   }
-
-  @media (max-width: $mobile-max) {
-
-  }
 }
 
 .promo-info-btn-text {
   font-size: 20px;
   font-weight: 600;
   color: $color-light;
-
-  @media (max-width: $tablet-max) {
-
-  }
-
-  @media (max-width: $mobile-max) {
-
-  }
 }
 
 .promo-cover {
@@ -123,4 +104,9 @@
   max-width: 300px;
   border-radius: 15px;
   box-shadow: 15px 15px 0 rgba($color-accent, .5);
+
+  @media (max-width: $mobile-max) {
+    max-width: 250px;
+    box-shadow: 10px 10px 0 rgba($color-accent, .5);
+  }
 }

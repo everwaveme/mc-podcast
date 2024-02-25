@@ -2,11 +2,11 @@
   margin-bottom: 100px;
 
   @media (max-width: $tablet-max) {
-
+    background: $color-gradient;
   }
 
   @media (max-width: $mobile-max) {
-
+    margin-bottom: 75px;
   }
 }
 
@@ -27,11 +27,11 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 35px;
-
+    background: none;
   }
 
   @media (max-width: $mobile-max) {
-
+    padding: 30px;
   }
 }
 
@@ -45,11 +45,6 @@
 
   @media (max-width: $tablet-max) {
     margin: 15px;
-
-  }
-
-  @media (max-width: $mobile-max) {
-
   }
 }
 
@@ -63,11 +58,10 @@
 
   @media (max-width: $tablet-max) {
     width: 200px;
-
   }
 
   @media (max-width: $mobile-max) {
-
+    width: 190px;
   }
 }
 

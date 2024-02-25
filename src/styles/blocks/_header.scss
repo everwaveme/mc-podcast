@@ -25,3 +25,19 @@
     opacity: .7;
   }
 }
+
+.header-burger {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    background-image: url(../images/burger-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
