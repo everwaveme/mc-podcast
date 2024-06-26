@@ -1,0 +1,144 @@
+.all-episodes {
+  padding: 130px;
+
+  @media (max-width: $tablet-max) {
+    padding: 100px 0;
+  }
+}
+
+.all-episodes-container {
+  @include container();
+}
+
+.all-episodes-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.all-episodes-title-box {
+  margin-bottom: 100px;
+  text-align: center;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-bottom: 50px;
+  }
+}
+
+.all-episodes-title {
+  @include text-gradient();
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 900;
+
+  @media (max-width: $tablet-max) {
+    font-size: 32px;
+  }
+}
+
+.all-episodes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  list-style: none;
+}
+
+.all-episodes-item {
+  flex-basis: 33.33%;
+  padding: 15px;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
+}
+
+.all-episodes-link {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  background-color: $color-semidark;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    box-shadow: 0 0 15px rgba($color-accent, .5);
+  }
+}
+
+.all-episodes-link-cover {
+  flex-basis: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+}
+
+.all-episodes-link-desc {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.all-episodes-link-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $color-light;
+}
+
+.all-episodes-link-play {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin: 0 5px 0 -5px;
+    width: 22px;
+    height: 22px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: 600;
+    color: $color-light;
+  }
+}
+
+.all-episodes-back-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  text-decoration: none;
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  img {
+    height: 12px;
+    transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  }
+
+  span {
+    @include text-gradient();
+    margin-left: 15px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &:hover {
+    opacity: .8;
+
+    img {
+      transform: translate(-5px, 0);
+    }
+  }
+}

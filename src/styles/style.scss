@@ -1,0 +1,21 @@
+// common files
+@import "common/_variables";
+@import "common/_mixins";
+@import "common/_fonts";
+@import "common/_common";
+
+// blocks
+@import "blocks/_header";
+@import "blocks/_nav";
+@import "blocks/_promo";
+@import "blocks/_platforms";
+@import "blocks/_episodes";
+@import "blocks/_all-episodes";
+@import "blocks/_about";
+@import "blocks/_reviews";
+@import "blocks/_contacts";
+@import "blocks/_newsletter-form";
+@import "blocks/_footer";
+
+// plugins
+@import "plugins/aos_custom";

@@ -1,0 +1,22 @@
+// fonts
+$font: 'Nunito Sans', sans-serif;
+
+// colors
+$color-light: #fbfcff;
+$color-semilight: #999;
+$color-dark: #222225;
+$color-semidark: #2D2D30;
+$color-accent: #e06336;
+$color-gradient: linear-gradient(90deg, rgba(224,99,54,1) 0%, rgba(228,77,69,1) 100%);
+
+// indents
+$gap: 30px;
+$gap-half: 15px;
+
+// breakpoints
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;
+
+$mobile-max: $tablet - 1;
+$tablet-max: $desktop - 1;

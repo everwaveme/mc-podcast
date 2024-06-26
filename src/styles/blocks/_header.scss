@@ -1,0 +1,54 @@
+.header {
+  padding: 30px 0;
+
+  @media (max-width: $tablet-max) {
+    position: relative;
+  }
+}
+
+.header-container {
+  @include container();
+}
+
+.header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-empty-box {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    width: 25px;
+  }
+} //контейнер для центровки логотипа в таблетках и мобилках
+
+.header-logo {
+  @include text-gradient();
+  font-size: 26px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .3s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.header-burger {
+  display: none;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    background-image: url(../images/burger-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}

@@ -1,0 +1,89 @@
+.contacts {
+  padding: 130px 0;
+  background-color: $color-semidark;
+
+  @media (max-width: $tablet-max) {
+    padding: 70px 0;
+  }
+}
+
+.contacts-container {
+  @include container();
+}
+
+.contacts-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-max) {
+    flex-direction: column;
+  }
+}
+
+.contacts-info {
+  flex-basis: 45%;
+  text-align: center;
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
+}
+
+.contacts-title {
+  @include text-gradient();
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 38px;
+  font-weight: 900;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+}
+
+.contacts-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-light;
+}
+
+.contacts-link {
+  @include text-gradient();
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .2s 0s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.contacs-newsletter {
+  flex-basis: 45%;
+  text-align: center;
+
+  @media (max-width: $tablet-max) {
+    padding: 20px 0;
+  }
+}
+
+.contacs-newsletter-title {
+  @include text-gradient();
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 38px;
+  font-weight: 900;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+}
+
+.contacs-newsletter-desc {
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-light;
+}
